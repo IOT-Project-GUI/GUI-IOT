@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public class start {
     public static void main(String[] args) {
-        System.out.println("Emma test");
+        System.out.println("Emma testar");
         String line = "", splitBy = ",";
 
         try {
