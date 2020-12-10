@@ -5,7 +5,7 @@ public class Product {
 	private String periodDay;
 	private String weekDay;
 
-	public product(int trans, String name, String periodDay, String weekDay) {
+	public Product(int trans, String name, String periodDay, String weekDay) {
 		this.trans = trans;
 		this.name = name;
 		this.periodDay = periodDay;
