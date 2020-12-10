@@ -3,10 +3,14 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.ReadOnlyFileSystemException;
+import java.util.ArrayList;
 
 public class Start {
+    private ArrayList<Product> productList = new ArrayList<Product>();
+    
     public static void main(String[] args) {
-        readFile();
+        Start start = new Start();
+        start.saveData();
     }
 
 //Metod som läser från en CSV fil och printar ut varje rad från tabellen
@@ -26,9 +30,8 @@ public void saveData() {
             String periodDay = products[3];
             String weekDay = products[4];
 
-
-            //public Product(int trans, String name, String periodDay, String weekDay)
             Product p = new Product(transactionNumber, name, periodDay, weekDay);
+            productList.add(p);
 
         }
 
