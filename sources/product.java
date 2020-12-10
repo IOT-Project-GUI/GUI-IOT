@@ -1,5 +1,5 @@
 
-public class product {
+public class Product {
 	private int trans;
 	private String name;
 	private String periodDay;
