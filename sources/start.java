@@ -37,7 +37,7 @@ private void saveData() {
     }
 }
 
-//Metod för att skriva ut listan productList
+//Metod för att skriva ut namnen på alla produkter i listan productList (test)
 private void printList() {
     for (Product p : productList) {
         System.out.println(p.getName());
