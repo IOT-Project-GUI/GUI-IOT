@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.nio.file.ReadOnlyFileSystemException;
 import java.util.ArrayList;
 
+<<<<<<< Updated upstream
 public class Start {
     private ArrayList<Product> productList = new ArrayList<Product>();
     
@@ -12,6 +13,10 @@ public class Start {
         Start start = new Start();
         start.saveData();
     }
+=======
+public class start {
+
+>>>>>>> Stashed changes
 
 //Metod som läser från en CSV fil och skapar ett object av varje rad, samt lägger till varje objekt i listan productList.
 // För att testa: spara "Bread basket" tabellen som CSV, se till att namn, dag etc är separerade med komma
