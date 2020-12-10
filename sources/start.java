@@ -16,7 +16,11 @@ private void readFile() {
         BufferedReader br = new BufferedReader(new FileReader("/Users/Natasha/Desktop/HT 2020/breadCSV.csv"));
         while ((line = br.readLine()) != null) {
             String[] products = line.split(splitBy);
-            System.out.println("Product [Transaction = " + products[0] + ", Name = " + products[1] + ", Day of week = " + products[3] + ", Weekend/Weekday = " + products[4] + "]");
+            for (int i = 0; i < products.length(); i++) {
+
+            }
+
+            //System.out.println("Product [Transaction = " + products[0] + ", Name = " + products[1] + ", Day of week = " + products[3] + ", Weekend/Weekday = " + products[4] + "]");
         }
     } catch (IOException ioe) {
         ioe.printStackTrace();
