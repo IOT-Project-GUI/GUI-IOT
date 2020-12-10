@@ -13,14 +13,10 @@ private void readFile() {
     String line = "", splitBy = ",";
 
     try {
-        BufferedReader br = new BufferedReader(new FileReader("/Users/Natasha/Desktop/HT 2020/breadCSV.csv"));
+        BufferedReader br = new BufferedReader(new FileReader("/Users/emma/Desktop/bread basket.csv"));
         while ((line = br.readLine()) != null) {
             String[] products = line.split(splitBy);
-            for (int i = 0; i < products.length(); i++) {
-
-            }
-
-            //System.out.println("Product [Transaction = " + products[0] + ", Name = " + products[1] + ", Day of week = " + products[3] + ", Weekend/Weekday = " + products[4] + "]");
+        System.out.println("Product [Transaction = " + products[0] + ", Name = " + products[1] + ", Day of week = " + products[3] + ", Weekend/Weekday = " + products[4] + "]");
         }
     } catch (IOException ioe) {
         ioe.printStackTrace();
