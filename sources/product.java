@@ -1,12 +1,12 @@
 
 public class Product {
-	private int trans;
+	private String transactionNumber;
 	private String name;
 	private String periodDay;
 	private String weekDay;
 
-	public Product(int trans, String name, String periodDay, String weekDay) {
-		this.trans = trans;
+	public Product(String transactionNumber, String name, String periodDay, String weekDay) {
+		this.transactionNumber = transactionNumber;
 		this.name = name;
 		this.periodDay = periodDay;
 		this.weekDay = weekDay;

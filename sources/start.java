@@ -11,26 +11,12 @@ public class Start {
 
 //Metod som läser från en CSV fil och printar ut varje rad från tabellen
 // För att testa: spara "Bread basket" tabellen som CSV, se till att namn, dag etc är separerade med komma
-private static void readFile() {
-    String line = "", splitBy = ",";
-
-    try {
-        BufferedReader br = new BufferedReader(new FileReader("/Users/emma/Desktop/bread basket.csv"));
-        while ((line = br.readLine()) != null) {
-            String[] products = line.split(splitBy);
-        System.out.println("Product [Transaction = " + products[0] + ", Name = " + products[1] + ", Day of week = " + products[3] + ", Weekend/Weekday = " + products[4] + "]");
-        }
-    } catch (IOException ioe) {
-        ioe.printStackTrace();
-    }
-}
-
 public void saveData() {
     String line = "", splitBy = ",";
 
     try {
         BufferedReader br = new BufferedReader(new FileReader("/Users/emma/Desktop/bread basket.csv"));
-        String[] products = new String[];
+        String[] products = new String[0];
         while ((line = br.readLine()) != null) {
             products = line.split(splitBy);
         }
@@ -41,14 +27,8 @@ public void saveData() {
             String weekDay = products[4];
 
 
-
-            System.out.println("Product [Transaction = " + products[0] + ", Name = " + products[1] + ", Day of week = " + products[3] + ", Weekend/Weekday = " + products[4] + "]");
-
-
-            public Product(int trans, String name, String periodDay, String weekDay)
-            Product p = new Product
-
-            String[]
+            //public Product(int trans, String name, String periodDay, String weekDay)
+            Product p = new Product(transactionNumber, name, periodDay, weekDay);
 
         }
 
