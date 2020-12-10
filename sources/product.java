@@ -16,7 +16,7 @@ public class Product {
 		return name;
 	}
 
-	public int getTrans() {
+	public String getTrans() {
 		return trans;
 	}
 
