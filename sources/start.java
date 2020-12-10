@@ -3,9 +3,6 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-// en class
-
-
 public class start {
     public static void main(String[] args) {
     }
