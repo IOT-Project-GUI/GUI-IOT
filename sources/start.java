@@ -3,7 +3,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class start {
+public class Start {
     public static void main(String[] args) {
     }
 
@@ -16,13 +16,11 @@ private void readFile() {
         BufferedReader br = new BufferedReader(new FileReader("/Users/Natasha/Desktop/HT 2020/breadCSV.csv"));
         while ((line = br.readLine()) != null) {
             String[] products = line.split(splitBy);
-            System.out.println("Product [Transaction = " + products[0] + ", Name = " + products[1] + ", Time = "
-                    + products[2] + ", Day of week = " + products[3] + ", Weekend/Weekday = " + products[4] + "]");
+            System.out.println("Product [Transaction = " + products[0] + ", Name = " + products[1] + ", Day of week = " + products[3] + ", Weekend/Weekday = " + products[4] + "]");
         }
     } catch (IOException ioe) {
         ioe.printStackTrace();
     }
 }
-
 
 }
