@@ -32,7 +32,9 @@ public void saveData() {
 
             Product p = new Product(transactionNumber, name, periodDay, weekDay);
             productList.add(p);
-
+            int j = 1;
+            System.out.println(j);
+            i++;
         }
 
     } catch (IOException ioe) {
